@@ -33,7 +33,7 @@ public class JBapp1_second extends ActionBarActivity {
 
         String url = urlView.getText().toString();
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse(url));
+        intent.setData(Uri.parse("http://"+url));
         startActivity(intent);
 
     }
